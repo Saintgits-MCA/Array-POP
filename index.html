@@ -14,10 +14,10 @@
         {
             elements[i] = parseInt(prompt("Enter the numbers to array:"));
         }
-         document.getElementById("full").value= elements;
+         document.getElementById("full").value=elements;
         document.getElementById("pop").value=(elements[n-1]);
          elements.pop();
-        document.getElementById("array").value= elements;
+        document.getElementById("array").value=elements;
         
 
      }
@@ -26,7 +26,7 @@
 </head>
 <body>
     <h1 style="color:red;">POP Array elements</h1>
-   <form><input type="text" id="n" placeholder="Number of Elements"><br><br>
+   <form name="pop"><input type="text" id="n" placeholder="Number of Elements"><br><br>
    <button onclick="array()" style="background-color:green;color:snow;border-radius:7cm;border-color:green;"> Submit </button>&emsp;&emsp;&emsp;
    <input type="reset" value="  Reset  " style="background-color:red;color:snow;border-radius:7cm;border-color:red;width: 82px;"></form><br><br><br>
    Array before Pop Last Element: <input type="text" id="full" placeholder="Array before Pop the element" readonly><br><br><br>
