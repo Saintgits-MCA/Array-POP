@@ -8,7 +8,7 @@
     <script>
         function array()
       {  var i;
-        var n = parseInt(document.getElementById("n").value);
+        var n = document.getElementById("n").value;
         var elements= new Array(n);
         for(i=0;i<n;i++)
         {
@@ -25,10 +25,11 @@
     </script>
 </head>
 <body>
+<form>
     <h1 style="color:red;">POP Array elements</h1>
-   <input type="text" id="n" placeholder="Number of Elements"><br><br>
+   <input type="number" id="n" placeholder="Number of Elements"><br><br>
    <button onclick="array()" style="background-color:green;color:snow;border-radius:7cm;border-color:green;"> Submit </button>&emsp;&emsp;&emsp;
-   <input type="reset" value="  Reset  " style="background-color:red;color:snow;border-radius:7cm;border-color:red;width: 82px;"><br><br><br>
+   <input type="reset" value="  Reset  " style="background-color:red;color:snow;border-radius:7cm;border-color:red;width: 82px;"></form><br><br><br>
    Array before Pop Last Element: <input type="text" id="full" placeholder="Array before Pop the element" readonly><br><br><br>
    Array after Pop Last Element: <input type="text" id="array" placeholder="Array after Pop the element" readonly><br><br><br>
    Popped Element  :&emsp;&emsp;&ensp;&emsp;&emsp;&ensp;<input type="text" id="pop" placeholder="Poped Value" readonly><br><br>
