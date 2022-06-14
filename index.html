@@ -4,19 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pop operation in array with Javascript</title>
+    <title>Pop Array Elements</title>
     <script>
         function array()
       {  var i;
         var n = document.getElementById("n").value;
         var elements= new Array(n);
-        for(i=1;i<=n;i++)
+        for(i=0;i<n;i++)
         {
-            elements[i] =parseInt(prompt("Enter the numbers to array:"));
+            elements[i] = prompt("Enter the numbers to array:");
         }
-         
-        document.getElementById("pop").value= elements[n];
-      elements.pop();
+         document.getElementById("full").value= elements;
+        document.getElementById("pop").value=(elements[0]);
+         elements.pop();
         document.getElementById("array").value= elements;
         
 
@@ -25,11 +25,13 @@
     </script>
 </head>
 <body>
-   <h1 style="color:red">POP Array elements</h1>
-   <input type="text" id="n" placeholder="Number of Elements"><br><br>
-   <button onclick="array()" style="background-color:green;color:snow;border-radius:7cm;border-color:green;"> Submit </button>&emsp;&emsp;&emsp;
-   <input type="reset" value="  Reset  " style="background-color:red;color:snow;border-radius:7cm;border-color:red;width: 82px;"><br><br><br>
+<form>
+    <h1 style="color:red;">Pop Array Elements</h1>
+   <input type="text" id="n" placeholder="Enter  number of Elements"><br><br>
+   <input type="button" onclick="array()" value=" Submit " style="background-color:green;color:snow;border-radius:7cm;border-color:green;width:82px;">&emsp;&emsp;&emsp;
+    <input type="reset" value="  Reset  " style="background-color:red;color:snow;border-radius:7cm;border-color:red;width: 82px;"></form><br><br><br>
+   Array before Pop Last Element: <input type="text" id="full" placeholder="Array before Pop the element" readonly><br><br><br>  
    Array after Pop Last Element: <input type="text" id="array" placeholder="Array after Pop the element" readonly><br><br><br>
-   Popped Element  :&emsp;&emsp;&ensp;&emsp;&emsp;&ensp;<input type="text" id="pop" placeholder="Poped Value" readonly><br><br>
+   Shifted Element  :&emsp;&emsp;&ensp;&emsp;&emsp;&ensp;<input type="text" id="pop" placeholder="Poped Value" readonly><br><br>
 </body>
 </html>
