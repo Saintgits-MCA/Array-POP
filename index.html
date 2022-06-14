@@ -10,7 +10,9 @@
       {  var i;
         var n = document.getElementById("n").value;
         var elements= new Array(n);
-            elements = parseInt(document.getElementById("full").value);
+         for(i=0;i<n;i++){
+           elements = parseInt(prompt("Enter the array element:");}
+        document.getElementById("full").value= elements;
         document.getElementById("pop").value=(elements[n-1]);
          elements.pop();
         document.getElementById("array").value= elements;
@@ -24,10 +26,10 @@
 <form>
     <h1 style="color:red;">POP Array Elements</h1>
    <input type="text" id="n" placeholder="Enter  number of Elements"><br><br>
-    Enter Array Elements: <input type="text" id="full" placeholder="Array before Pop the element" ><br><br><br> 
    <input type="button" onclick="array()" value=" Submit " style="background-color:green;color:snow;border-radius:7cm;border-color:green;width:82px;">&emsp;&emsp;&emsp;
     <input type="reset" value="  Reset  " style="background-color:red;color:snow;border-radius:7cm;border-color:red;width: 82px;"></form><br><br><br>
-   Array after Pop Last Element: <input type="text" id="array" placeholder="Array after Pop the element" readonly><br><br><br>
+    Array before Pop Last Element: <input type="text" id="full" placeholder="Array before Pop the element" ><br><br><br> 
+      Array after Pop Last Element: <input type="text" id="array" placeholder="Array after Pop the element" readonly><br><br><br>
    Popped Element  :&emsp;&emsp;&ensp;&emsp;&emsp;&ensp;<input type="text" id="pop" placeholder="Pop-ed Value" readonly><br><br>
 </body>
 </html>
