@@ -12,7 +12,7 @@
         var elements= new Array(n);
         for(i=0;i<n;i++)
         {
-            elements[i] = prompt("Enter the numbers to array:");
+            elements[i] =parseInt(prompt("Enter the numbers to array:"));
         }
          
         document.getElementById("pop").value=(elements[n-1]);
@@ -30,6 +30,6 @@
    <button onclick="array()" style="background-color:green;color:snow;border-radius:7cm;border-color:green;"> Submit </button>&emsp;&emsp;&emsp;
    <input type="reset" value="  Reset  " style="background-color:red;color:snow;border-radius:7cm;border-color:red;width: 82px;"><br><br><br>
    Array after Pop Last Element: <input type="text" id="array" placeholder="Array after Pop the element" readonly><br><br><br>
-   Popped Element  :&emsp;&emsp;&ensp;&emsp;&emsp;&ensp;<input type="text" id="pop" placeholder="Pop-ed Value" readonly><br><br>
+   Popped Element  :&emsp;&emsp;&ensp;&emsp;&emsp;&ensp;<input type="text" id="pop" placeholder="Poped Value" readonly><br><br>
 </body>
 </html>
